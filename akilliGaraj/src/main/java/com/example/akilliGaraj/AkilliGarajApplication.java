@@ -19,7 +19,6 @@ public class AkilliGarajApplication {
 		return args -> {
 			if (userRepository.count() == 0) {
 				User testUser = new User();
-				testUser.setUsername("hakan");
 				testUser.setEmail("hakan@example.com");
 
 				testUser.setPassword("123456");

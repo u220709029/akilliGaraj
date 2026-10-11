@@ -23,7 +23,7 @@ public class MaintenanceController {
 
     private final MaintenanceService maintenanceService;
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<MaintenanceResponse> addMaintenance(@Valid @RequestBody MaintenanceCreateRequest request) {
         log.info("MaintenanceController: {} id'li araç için bakım kaydı ekleniyor.", request.getVehicleId());
         MaintenanceResponse response = maintenanceService.addMaintenanceRecord(request);

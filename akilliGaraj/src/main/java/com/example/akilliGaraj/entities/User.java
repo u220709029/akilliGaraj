@@ -8,14 +8,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-// DİKKAT: Tablo adını 'users' yapmak yerine 'app_users' yapıyoruz.
 @Table(name = "app_users")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@EntityListeners(AuditingEntityListener.class)
 public class User extends com.example.akilliGaraj.entity.BaseEntity {
 
     @Id
