@@ -1,4 +1,4 @@
-package com.example.akilliGaraj.services;
+package com.example.akilliGaraj.security;
 
 import com.example.akilliGaraj.entities.User2;
 import com.example.akilliGaraj.enums.RoleEnum;

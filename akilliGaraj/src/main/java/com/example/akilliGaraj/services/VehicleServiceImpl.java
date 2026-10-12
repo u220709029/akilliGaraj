@@ -10,12 +10,15 @@ import com.example.akilliGaraj.repository.VehicleRepository;
 import com.example.akilliGaraj.services.VehicleService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+//@PreAuthorize
+//@PostAuthorize()
 @Service
 @RequiredArgsConstructor
 @Slf4j

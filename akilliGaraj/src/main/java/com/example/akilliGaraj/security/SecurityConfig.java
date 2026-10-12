@@ -36,7 +36,7 @@ public class SecurityConfig {
 
                         .requestMatchers(HttpMethod.PUT, "/api/v1/**").hasRole("ADMIN")
 
-                        .requestMatchers(HttpMethod.POST, "/register").permitAll()
+                        .requestMatchers("/register","/login").permitAll()
 
 
                         .anyRequest().denyAll()
